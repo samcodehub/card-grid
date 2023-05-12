@@ -1,0 +1,68 @@
+.triangle-container {
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  top: -10px;
+  left: calc(90% - 10px); /* subtract half the width of the triangle */
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #000;
+}
+
+.mirror-text {
+  left: 80%;
+  transform: scaleY(-1);
+  filter: flipV();
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+
+
+
+
+#untie {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .talent {
+    font-size: 100px;
+    font-weight: 400;
+    margin-top: -20px;
+    padding-top: 0;
+  }
+ 
+
+
+.card-description {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.card:hover .card-description {
+  display: block;
+  max-height: 200px; /* set a maximum height to limit the size of the description */
+  font-weight: 600;
+  font-size: 12px;
+}
+
+
+  
+  .card-img {
+    opacity: 1; /* Adjust the opacity value as desired (0.0 to 1.0) */
+  }
+  
+  .card:hover .card-img {
+    opacity: 0.5;
+  }
+  
